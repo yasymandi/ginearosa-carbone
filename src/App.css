@@ -1,31 +1,72 @@
+/* Hide the main content initially */
+#main-content {
+  display: none; /* Hide main content initially */
+}
+
+/* Full-screen splash */
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  animation: fadeOut 2s ease-out forwards;
+  animation-delay: 1s; /* Keeps logo visible for a bit before fading */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .App {
   text-align: center;
+  background-color: #201b12;
+  height: 100%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: transparent;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #5c1515;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px #000000; /* Adds a shadow for a haunted look */
+  letter-spacing: 2px; /* Slightly spaced out letters */
+  font-family: "Courier New", Courier, monospace; 
+  font-size: 2rem;  
+  padding-bottom: 2%;
 }
 
-.App-link {
-  color: #61dafb;
+.body {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 75vh;
+  flex: 1;
+  justify-content: space-between;
+  padding-right: 10%;
+}
+
+.bio, .books {
+  flex: 1; /* Makes each component take up equal space */
+  display: flex;
+  flex-direction: column; /* Adjusts the content inside each component */
+  justify-content: flex-start;
+  height: 100%;
 }
 
 @keyframes App-logo-spin {

@@ -1,0 +1,29 @@
+.bio {
+    background-color: #382f21;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Image occupies the first column; text takes up the remaining space */
+    grid-template-rows: auto 1fr; /* Allows text to start beside the image and continue below */
+    gap: 20px; /* Space between image and text */
+    align-items: start; /* Align content at the top */
+    height: auto;
+}
+
+.author-pic {
+    width: 100%; /* Ensures the image scales properly within the grid */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Limits the image width, adjust as needed */
+    grid-row: 1 / span 2; /* Span both rows to occupy the full height */
+    grid-column: 1; /* Places the image in the first column */
+}
+
+.bio-text {
+    /* grid-column: 2; Places the text in the second column */
+    grid-row: 1 / span 2; /* Allows text to span multiple rows, flowing below the image */
+    line-height: 1.5;
+    color: black;
+}

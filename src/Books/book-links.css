@@ -1,0 +1,40 @@
+.books {
+height: 100%;
+font-family: 'Arial Black', 'Impact', 'Georgia', sans-serif; /* Fallback to sans-serif if none are available */
+font-size: 2em; /* Adjust size as needed */
+color: #330000; /* Dark color for a creepy effect */
+text-align: center;
+}
+
+.book-carousel {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px; /* Adjust space between buttons and book */
+}
+
+.book-item {
+padding: 10px;
+background-color: #f9f9f9; /* Light background for contrast */
+border: 1px solid #ccc; /* Add a border */
+border-radius: 5px; /* Round corners */
+}
+
+button {
+padding: 10px;
+cursor: pointer;
+background-color: #330000; /* Dark background */
+color: white; /* White text */
+border: none;
+border-radius: 5px; /* Round corners */
+}
+
+button:disabled {
+background-color: #ccc; /* Grey background when disabled */
+cursor: not-allowed; /* Change cursor style */
+}
+
+img {
+max-height: 200px;
+max-width: 200px;
+}
