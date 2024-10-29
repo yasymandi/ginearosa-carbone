@@ -15,9 +15,11 @@ gap: 10px; /* Adjust space between buttons and book */
 
 .book-item {
 padding: 10px;
-background-color: #f9f9f9; /* Light background for contrast */
-border: 1px solid #ccc; /* Add a border */
 border-radius: 5px; /* Round corners */
+}
+
+a {
+    color: black;
 }
 
 button {
