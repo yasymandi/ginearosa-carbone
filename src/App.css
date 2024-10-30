@@ -1,6 +1,22 @@
-/* Hide the main content initially */
+/* Fade in the main content */
 #main-content {
-  display: none; /* Hide main content initially */
+  opacity: 0;
+  display: block; /* Let CSS handle initial visibility */
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s; 
+}
+
+/* Define keyframes */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* Full-screen splash */
@@ -20,19 +36,11 @@
   animation-delay: 1s; /* Keeps logo visible for a bit before fading */
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .App {
   text-align: center;
-  background-color: #201b12;
-  height: 100%;
+  background-color: #5c131B;
+  height: auto;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -42,9 +50,9 @@
 }
 
 .App-header {
-  color: #5c1515;
+  color: white;
   font-weight: bold;
-  text-shadow: 4px 4px 10px #000000; /* Adds a shadow for a haunted look */
+  text-shadow: 10px 10px 8px #070000; /* Adds a shadow for a haunted look */
   letter-spacing: 2px; /* Slightly spaced out letters */
   font-family: "Courier New", Courier, monospace; 
   font-size: 2rem;  
@@ -58,7 +66,6 @@
   height: 75vh;
   flex: 1;
   justify-content: space-between;
-  padding-right: 10%;
 }
 
 .bio, .books {

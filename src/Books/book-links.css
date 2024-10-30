@@ -1,5 +1,6 @@
 .books {
 height: 100%;
+padding: 5%;
 font-family: 'Arial Black', 'Impact', 'Georgia', sans-serif; /* Fallback to sans-serif if none are available */
 font-size: 2em; /* Adjust size as needed */
 color: #330000; /* Dark color for a creepy effect */
@@ -18,6 +19,9 @@ padding: 10px;
 border-radius: 5px; /* Round corners */
 }
 
+.book-description {
+    font-size: medium;
+}
 a {
     color: black;
 }

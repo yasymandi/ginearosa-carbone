@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './book-links.css';
+import { cutMeOpenDescription } from './CutMeOpenDescription'
 
 const Books: React.FC = () => {
   // Define an array of books
@@ -8,11 +9,12 @@ const Books: React.FC = () => {
       title: 'Cut Me Open: Make Me Whole',
       link: 'https://www.amazon.com/Cut-Me-Open-Make-Whole/dp/1946874876',
       image: 'https://m.media-amazon.com/images/I/71rFtvzJ1wL._SL1500_.jpg',
-    }
-    // {
-    //   title: 'Another Book Title',
-    //   link: 'https://www.amazon.com/Another-Book-Title/dp/example',
-    // },
+      description: cutMeOpenDescription,
+    },
+    {
+      title: 'Coming Soon - Another Book Title',
+      // link: 'https://www.amazon.com/Another-Book-Title/dp/example',
+    },
     // {
     //   title: 'Yet Another Book',
     //   link: 'https://www.amazon.com/Yet-Another-Book/dp/example',
@@ -47,7 +49,7 @@ const Books: React.FC = () => {
             {books[currentIndex].title}
           </a>
           <br/>
-          <text>Description here</text>
+          <p className='book-description'>{books[currentIndex].description}</p>
         </div>
         <button onClick={handleNext} disabled={books.length <= 1}>
            &gt;
