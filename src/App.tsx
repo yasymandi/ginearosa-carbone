@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         <img src={crow} className="crow" alt="logo" />
       </div>
       <div id="main-content" className="main-content">
-        <header className="App-header">Ginearosa Carbone - Horror Novelist</header>
+        <header className="App-header">Ginearosa Carbone</header>
         <TabsWithRoutes /> 
       </div>
     </div>

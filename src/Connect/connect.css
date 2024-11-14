@@ -1,0 +1,17 @@
+.connect {
+    color: #d2d6d1;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    background-color: #4d0f16;
+}
+
+.inquiries-header {
+    font-size: 200%;
+    opacity: 0.5;
+}
+
+.personal {
+    color: white;
+}

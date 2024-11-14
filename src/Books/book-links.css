@@ -1,10 +1,14 @@
 .books {
 height: 100%;
 padding: 5%;
+padding-left: 20%;
+padding-right: 20%;
 font-family: 'Arial Black', 'Impact', 'Georgia', sans-serif; /* Fallback to sans-serif if none are available */
 font-size: 2em; /* Adjust size as needed */
-color: #330000; /* Dark color for a creepy effect */
+color: black; 
+background-color: #4d0f16;
 text-align: center;
+overflow-y: auto;
 }
 
 .book-carousel {
