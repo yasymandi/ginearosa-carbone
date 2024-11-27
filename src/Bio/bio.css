@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Henny+Penny&family=Luckiest+Guy&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 .bio {
-    background-color: #4d0f16;
+    background-color: white;
     max-height: 100%;
 }
 
 .container {
-    display: flex; /* Use flexbox for layout */
     gap: 20px; /* Space between image and text */
     align-items: flex-start; /* Align items at the top */
-    padding: 10%;
+    padding-bottom: 6%;
     padding-top: 15px;
     overflow-y: auto;
     line-height: 1.5;
     color: #d2d6d1;
     text-align: left;
+    display: grid;
+}
+
+.container-inner {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    color: black;
 }
 
 .author-pic {
@@ -20,14 +29,79 @@
     height: auto; /* Maintain aspect ratio */
     max-width: 250px; /* Limits the image width, adjust as needed */
     padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
 .bio-text {
+    font-family: "Spectral", Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     flex: 1; /* Allow the text to take up the remaining space */
+    padding-left: 40px;
 }
 
 .author-header {
+    font-family: 'Fuggles', sans-serif;
+    font-weight: 400;
     padding-top: 0;
     font-size: 300%;
-    opacity: 0.5;
 }
+
+.quick-access {
+    grid-row: 3;
+    padding-top: 5%;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center nested children */
+    align-items: center; /* Vertically center nested children */
+    gap: 20px;
+}
+
+.bubble-pic {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Make it a perfect circle */
+    border-radius: 50%; /* Turn it into a circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Add depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .bubble-pic:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.25); /* Enhance shadow on hover */
+  }
+  
+  a {
+    text-decoration: none; /* Remove default link styles */
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .personal {
+    position: relative; /* Allows positioning of the tooltip relative to this element */
+    text-decoration: none; /* Optional: Style the link */
+    color: #007bff; /* Optional: Link color */
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: 0%; /* Position the tooltip above the link */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 5px 10px; /* Add some space inside the tooltip */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 12px; /* Smaller font size */
+    white-space: nowrap; /* Prevent text wrapping */
+    visibility: hidden; /* Hide the tooltip by default */
+    opacity: 0; /* Transparent by default */
+    transition: opacity 0.2s ease; /* Smooth fade-in effect */
+  }
+
+  .personal:hover .tooltip {
+    visibility: visible; /* Show the tooltip on hover */
+    opacity: 1; /* Make it fully visible */
+  }

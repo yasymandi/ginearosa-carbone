@@ -1,45 +1,9 @@
-/* Fade in the main content */
-#main-content {
-  opacity: 0;
-  display: block; /* Let CSS handle initial visibility */
-  animation: fadeIn 2s forwards;
-  animation-delay: 1s; 
-}
-
-/* Define keyframes */
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Full-screen splash */
-#splash {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  opacity: 1;
-  animation: fadeOut 2s ease-out forwards;
-  animation-delay: 1s; /* Keeps logo visible for a bit before fading */
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Luckiest+Guy&display=swap');
 .App {
   text-align: center;
-  background-color: #5c131B;
+  background-color: #122f21;
   height: auto;
+  padding: 40px;
   min-height: 100vh;
 }
 
@@ -50,12 +14,11 @@
 }
 
 .App-header {
+  font-family: 'Fuggles', sans-serif;
+  font-weight: 400;
+  font-size: 300%;
   color: white;
-  font-weight: bold;
-  text-shadow: 10px 10px 8px #070000; /* Adds a shadow for a haunted look */
-  letter-spacing: 2px; /* Slightly spaced out letters */
-  font-family: "Courier New", Courier, monospace; 
-  font-size: 2rem;  
+  text-shadow: 10px 10px 8px #070000; /* Adds a shadow */
   padding-bottom: 2%;
 }
 

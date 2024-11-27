@@ -12,13 +12,13 @@ const Books: React.FC = () => {
       description: cutMeOpenDescription,
     },
     {
-      title: 'Coming Soon - Another Book Title',
+      title: 'Coming Soon',
       // link: 'https://www.amazon.com/Another-Book-Title/dp/example',
-    },
+    // },
     // {
     //   title: 'Yet Another Book',
     //   link: 'https://www.amazon.com/Yet-Another-Book/dp/example',
-    // },
+    },
     // Add more books as needed
   ];
 
