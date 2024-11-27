@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/ginearosa-carbone/static/css/main.676f0856.css",
-    "main.js": "/ginearosa-carbone/static/js/main.dfa024bb.js",
+    "main.css": "/ginearosa-carbone/static/css/main.b32c91d2.css",
+    "main.js": "/ginearosa-carbone/static/js/main.c67645ad.js",
     "static/js/453.802a37c5.chunk.js": "/ginearosa-carbone/static/js/453.802a37c5.chunk.js",
-    "static/media/crow.png": "/ginearosa-carbone/static/media/crow.05873e0c61f1f260fdeb.png",
     "static/media/Ginearosa-author-pic.jpg": "/ginearosa-carbone/static/media/Ginearosa-author-pic.e9494bc3e8703e2190bd.jpg",
     "index.html": "/ginearosa-carbone/index.html",
-    "main.676f0856.css.map": "/ginearosa-carbone/static/css/main.676f0856.css.map",
-    "main.dfa024bb.js.map": "/ginearosa-carbone/static/js/main.dfa024bb.js.map",
+    "main.b32c91d2.css.map": "/ginearosa-carbone/static/css/main.b32c91d2.css.map",
+    "main.c67645ad.js.map": "/ginearosa-carbone/static/js/main.c67645ad.js.map",
     "453.802a37c5.chunk.js.map": "/ginearosa-carbone/static/js/453.802a37c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.676f0856.css",
-    "static/js/main.dfa024bb.js"
+    "static/css/main.b32c91d2.css",
+    "static/js/main.c67645ad.js"
   ]
 }
