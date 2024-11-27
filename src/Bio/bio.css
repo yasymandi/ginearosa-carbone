@@ -27,9 +27,7 @@
     width: auto; /* Ensures the image scales properly */
     height: auto; /* Maintain aspect ratio */
     max-width: 250px; /* Limits the image width, adjust as needed */
-    padding-top: 70px;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding: 10px;
 }
 
 .bio-text {
@@ -38,6 +36,7 @@
     font-style: normal;
     flex: 1; /* Allow the text to take up the remaining space */
     padding-left: 40px;
+    grid-row: 2;
 }
 
 .author-header {

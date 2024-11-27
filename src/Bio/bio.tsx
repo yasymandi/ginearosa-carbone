@@ -9,11 +9,13 @@ const Bio: React.FC = () => {
     <div className='bio'>
         <div className="container">
           <div className='container-inner'>
+            <div className='author-pic-div'>
+              <img src={author_pic} className="author-pic" />
+            </div>
             <div className='bio-text'>
               <text className='author-header'>Author</text> <br/>
               {bioText}
             </div>
-              <img src={author_pic} className="author-pic" />
           </div>
         </div>
     </div>
